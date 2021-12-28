@@ -1,0 +1,1121 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+
+:root {
+    --white: #F5F5F5;
+    --lightmocha: #8db48e;
+    --darkmocha: #4d724d;
+}
+
+*,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all 0.6s ease;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: whitesmoke;
+
+}
+
+header {
+    background-color: var(--lightmocha);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    border: 10px double var(--darkmocha);
+    padding: 10px;
+    cursor: pointer;
+}
+
+header nav {
+    margin: 15px 0px;
+    width: 100%;
+    margin: 30px 0px;
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-size: 24px;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.6s ease;
+    border-left-width: 10px;
+    border-top-width: 10px;
+    border-left-style: groove;
+    border-top-style: groove;
+    border-color: transparent;
+}
+
+ul li a:hover {
+    border-color: var(--darkmocha);
+    font-size: 23px;
+}
+
+#bars {
+    font-size: 38px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    margin-bottom: 30px;
+    display: none;
+}
+
+#bars:hover {
+    color: var(--darkmocha);
+}
+
+.main_heading {
+    background: var(--white);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.main_heading h2 {
+    font-size: 75px;
+    letter-spacing: 2px;
+    color: var(--darkmocha);
+    margin: 5px 0px;
+    font-weight: 600;
+    font-family: "Kaushan Script";
+}
+
+.main_heading h3 {
+    font-size: 26px;
+    color: var(--darkmocha);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.main_heading .hire_me {
+    font-size: 20px;
+    color: black;
+    background-color: var(--lightmocha);
+    padding: 10px 20px;
+    text-align: center;
+    margin: 25px 0px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.hire_me a {
+    color: var(--darkmocha);
+    text-decoration: none;
+}
+
+.hire_me a:hover {
+    color: black;
+}
+
+.hire_me:hover {
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    color: black;
+    transform: scale(1.08);
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.about_us h1 {
+    font-size: 40px;
+    font-family: "kaushan Script";
+    margin: 20px 0px;
+    color: var(--darkmocha)
+}
+
+.about_us img {
+    width: 28%;
+    border-radius: 10px;
+    border: 10px double var(--darkmocha);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.about_us h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 550;
+    color: var(--darkmocha);
+}
+
+.about_us p {
+    font-size: 20px;
+    font-weight: 300;
+    width: 80%;
+    line-height: 30px;
+    color: var(--darkmocha);
+}
+
+.my_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.my_skills .skills_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.my_skills h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: "Kaushan Script";
+    font-weight: 600;
+    color: var(--darkmocha);
+}
+
+.my_skills .skills_intro {}
+
+.skills_intro .intro {
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .fa {
+    font-size: 50px;
+    color: var(--darkmocha);
+    margin-bottom: 5px;
+}
+
+.intro h5 {
+    font-size: 24px;
+    color: var(--darkmocha);
+    font-weight: 500;
+}
+
+.intro p {
+    font-size: 18px;
+    color: var(--lightmocha);
+    text-align: center;
+}
+
+.skills_area .skills_ability {}
+
+.skills_ability .progress_bar {
+    height: 60px;
+    background-color: lightgrey;
+    width: 500px;
+    border-radius: 15px;
+    margin: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.progress_bar .percent {
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.percent p {
+    margin-left: 45px;
+    color: black;
+}
+
+.skills_ability .engineer .percent {
+    background-color: lightsalmon;
+    width: 90%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.skills_ability .programming .percent {
+    background-color: royalblue;
+    width: 60%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.skills_ability .modeling .percent {
+    background-color: rgb(248, 153, 248);
+    width: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.skills_ability .autocad .percent {
+    background-color: lightpink;
+    width: 95%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.skills_ability .earthquake .percent {
+    background-color: lightgreen;
+    width: 40%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.skills_ability .photoshop .percent {
+    background-color: rgb(69, 240, 231);
+    width: 60%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.services h2 {
+    font-size: 40px;
+    font-family: "Kaushan Script";
+    margin: 20px 0px;
+    text-align: center;
+    color: var(--darkmocha);
+}
+
+.services .box_services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box_services .service {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    background-color: var(--lightmocha);
+    border-radius: 15px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+}
+
+.service:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.service:not(:hover) {
+    filter: brightness(0.7);
+}
+
+.service img {
+    width: 180px;
+    height: 110px;
+}
+
+.service p {
+    font-size: 18px;
+    color: var(--darkmocha);
+    padding: 3px;
+}
+
+.my_works h2 {
+    font-size: 40px;
+    color: var(--darkmocha);
+    text-align: center;
+    margin: 30px 0px;
+    font-family: "Kaushan Script";
+}
+
+.my_works .works_box_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.works_box_slider img {
+    width: 700px;
+    height: 500px;
+    border: 15px groove var(--lightmocha);
+    padding: 10px;
+}
+
+.works_box_slider button {
+    font-size: 30px;
+    padding: 10px;
+    color: var(--darkmocha);
+    background: var(--lightmocha);
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    padding: 50px 10px 50px 10px;
+    outline: none;
+    border: 2px solid var(--darkmocha);
+    cursor: pointer;
+}
+
+.works_box_slider button:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    color: black;
+}
+
+.my_works h3 {
+    font-size: 26px;
+    color: var(--darkmocha);
+    margin: 10px;
+    text-align: center;
+}
+
+.companies h2 {
+    margin: 40px 0px;
+    text-align: center;
+    color: var(--darkmocha);
+    font-size: 40px;
+    font-family: "Kaushan Script";
+}
+
+.companies .company_list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 70px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.companies .company_list .company {
+    width: 200px;
+    height: 200px;
+}
+
+.companies .company img {
+    width: 100%;
+    height: 100%;
+    filter: contrast(0.8);
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+
+.companies .company_list .company img:hover {
+    filter: contrast(1);
+}
+
+.contact_me h2 {
+    font-size: 40px;
+    margin: 30px 0px;
+    text-align: center;
+    font-family: "Kaushan Script";
+    color: var(--darkmocha);
+}
+
+.contact_me .contact_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px 0px;
+}
+
+.contact_container .contact_intro {
+    color: var(--darkmocha);
+    text-align: center;
+
+}
+
+.contact_intro p {
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.contact_intro .fa {
+    color: var(--lightmocha);
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.contact_container .contact_form {
+    font-size: 18px;
+    color: var(--darkmocha);
+}
+
+.contact_form .inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs input {
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    text-indent: 5px;
+    padding: 5px;
+    border: 2px solid var(--lightmocha)
+}
+
+.contact_form textarea {
+    width: 415px;
+    height: 150px;
+    margin: 6px;
+    margin-top: 20px;
+    text-indent: 5px;
+    padding: 5px;
+    border: 2px solid var(--lightmocha)
+}
+
+.contact_form button {
+    font-size: 22px;
+    color: var(--darkmocha);
+    background-color: var(--lightmocha);
+    text-align: center;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.6s ease;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact_form button:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    color: black;
+}
+
+.contact_form .warning {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    background-color: var(--lightmocha);
+    width: 95%;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.up {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightmocha);
+    transform: all 0.5s ease;
+    cursor: pointer;
+}
+
+.up a {
+    color: var(--darkmocha);
+}
+
+.up a .fa:hover {
+    color: black;
+}
+
+.up:hover {
+    color: black;
+    transform: scale(1.04);
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.55);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--lightmocha);
+    padding: 20px;
+}
+
+footer .social_logo {
+    font-size: 40px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social_logo .fa {
+    padding: 20px;
+    transition: all 0.6s ease-in;
+    border-radius: 10px;
+}
+
+.social_logo .fa:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color: black;
+}
+
+.fa-facebook:hover {
+    color: royalblue
+}
+
+.fa-instagram:hover {
+    color: orangered
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-snapchat:hover {
+    color: yellow
+}
+
+.fa-envelope-o:hover {
+    color: brown;
+}
+
+footer .footnavs {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footnavs a {
+    margin: 0px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.footnavs a:hover {
+    color: var(--darkmocha);
+}
+
+footer .first {
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*Dark mode*/
+body .darkMode {
+    font-size: 45px;
+    color: white;
+    background: black;
+    text-align: center;
+    position: fixed;
+    top: 87%;
+    bottom: 0;
+    left: 94%;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0.8)
+}
+
+body .darkMode:hover {
+    border: 2ps solid gray;
+    filter: brightness(1);
+    transform: scale(1.05);
+    box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.55);
+-webkit-box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.55);
+
+}
+
+.dark_enabled {
+    background-color: black;
+}
+
+@media screen and (max-width: 1100px) {
+    .services .box_services {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+    }
+
+    .my_works .works_box_slider img {
+        width: 80%;
+        height: auto;
+    }
+
+    .companies .company_list .company {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .my_skills .skills_area {
+        flex-direction: column;
+    }
+
+    .my_works .works_box_slider button {
+        padding: 30px 8px 30px 8px;
+        margin: 10px;
+    }
+
+    body .darkMode {
+        font-size: 35px;
+        padding: 5px;
+        width: 60px;
+        height: 60px;
+        left: 90%;
+        top: 93%;
+    }
+}
+
+
+/*TABLET OR BIG SCREEN MOBILES*/
+@media screen and (max-width: 820px) {
+    header .logo {
+        font-size: 27px;
+    }
+
+    .main_heading {
+        height: 70vh;
+    }
+
+    .main_heading h2 {
+        font-size: 60px;
+    }
+
+    .main_headinng h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .main_heading .hire_me {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #bars {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-bottom: 30px;
+    }
+
+    nav ul li a {
+        padding: 8px;
+        font-size: 24px;
+        border-width: 8px;
+    }
+
+    .about_us img {
+        border-width: 6px;
+    }
+
+    .about_us h1 {
+        font-size: 35px;
+    }
+
+    .about_us h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .about_us p {
+        font-size: 16px;
+    }
+
+    .services .box_services {
+        grid-template-columns: auto auto;
+    }
+
+    .my_works h2 {
+        font-size: 30px;
+    }
+
+    .my_works h3 {
+        font-size: 20px;
+    }
+
+    .my_works .works_box_slider button {
+        font-size: 22px;
+        padding: 24px 7px 24px 7px;
+    }
+
+    .companies .company_list .company {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact_me h2 {
+        font-size: 30px;
+    }
+
+    .contact_me .contact_container {
+        flex-direction: column;
+    }
+
+    .contact_container .contact_intro {
+        margin-bottom: 20px;
+    }
+
+    .contact_form .warning {
+        font-size: 16px;
+    }
+
+    footer .social_logo .fa {
+        font-size: 30px;
+
+    }
+
+    footer .footnavs a {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+
+    body .darkMode {
+        font-size: 30px;
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        top: 90%;
+        position: fixed;
+        left: 90%;
+    }
+
+}
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 440px) {
+    header .logo {
+        font-size: 22px;
+    }
+
+    .main_heading h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .main_heading h3 {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .main_heading .hire_me {
+        font-size: 16px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 25px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        border-width: 6px;
+        padding: 6px;
+    }
+
+    .about_us img {
+        border-width: 4px;
+    }
+
+    .about_us h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about_us h4 {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .about_us p {
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .services .box_services {
+        grid-template-columns: auto;
+    }
+
+    .my_works h2 {
+        font-size: 22px;
+    }
+
+    .my_works h3 {
+        font-size: 16px;
+    }
+
+    .my_works .works_box_slider img {
+        border: 8px groove var(--lightmocha);
+    }
+
+    .my_works .works_box_slider button {
+        font-size: 20px;
+        padding: 15px 5px 15px 5px;
+    }
+
+    .companies .company_list {
+        grid-template-columns: auto auto;
+    }
+
+    .companies .company_list .company {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact_form .warning {
+        font-size: 14px;
+    }
+
+    .conact_me  ..contact_container .contact_intro p {
+        font-size: 14px;
+    }
+
+    .contact_me .contact_container .contact_form .inputs input {
+        width: 140px;
+        height: 25px;
+    }
+
+    .contact_me .contact_container .contact_form textarea {
+        width: 290px;
+    }
+
+    .contact_me .contact_container .contact_form button {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .contact_intro p {
+        font-size: 16px;
+    }
+
+    footer .social_logo .fa {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer .footnavs {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+
+    body .up {
+        font-size: 20px;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    body .darkMode {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        top: 92%;
+        left: 82%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .skills_area .skills_intro .fa {
+        font-size: 40px;
+    }
+
+    .skills_intro h5 {
+        font-size: 22px;
+    }
+
+    .skills_intro p {
+        font-size: 16px;
+    }
+
+    .skills_ability .progress_bar {
+        width: 250px;
+        height: 30px;
+    }
+
+    .skills_ability .percent {
+        height: 30px;
+    }
+
+    .skills_ability .percent p {
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .skills_ability .engineer .percent {
+        background-color: lightsalmon;
+        width: 200px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .skills_ability .programming .percent {
+        background-color: royalblue;
+        width: 100px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .skills_ability .modeling .percent {
+        background-color: rgb(248, 153, 248);
+        width: 150px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .skills_ability .autocad .percent {
+        background-color: lightpink;
+        width: 225px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .skills_ability .earthquake .percent {
+        background-color: lightgreen;
+        width: 50px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .skills_ability .photoshop .percent {
+        background-color: rgb(69, 240, 231);
+        width: 100px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .companies .company_list .company {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact_me h2 {
+        font-size: 26px;
+    }
+
+    .contact_me .contact_container .contact_intro {
+        font-size: 16px;
+    }
+
+    .contact_intro .fa {
+        font-size: 18px;
+    }
+
+    .contact_container .contact_form {
+        font-size: 16px;
+    }
+
+    .contact_form .inputs input {
+        width: 180px;
+        height: 30px;
+    }
+
+    .contact_form textarea {
+        width: 365px;
+    }
+
+    .contact_form button {
+        font-size: 20px;
+        padding: 7px;
+    }
+
+    footer .social_logo .fa {
+        padding: 12px;
+    }
+
+    footer .footnavs a {
+        font-size: 18px;
+        margin: 0px 15px;
+    }
+
+    .up {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    body .darkMode {
+        font-size: 25px;
+        padding: 0px;
+        top: 90%;
+        left: 87%;
+    }
+
+}
