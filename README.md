@@ -2,6 +2,8 @@
 
 This is a simple portfolio app made with Html,css and javascript.
 
+<b>DEMO:  https://sherpa00.github.io/Dewan-Pradhan/ </b>
+
 <h2> Things i learned </h2>
 
 1) How to make professional looking website with html , css and js.
